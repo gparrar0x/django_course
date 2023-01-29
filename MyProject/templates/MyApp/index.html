@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "MyApp/base.html" %}
+{% load static %}
+
+    {% block body_block %}
+    <div class="jumbotron jumbotron-fluid">
+        <img class="img-fluid" src='{% static "images/benito.jpg" %}' >
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Benito</h1>
+            </div>
+            <div class="col">
+                <h2>Bariloche</h2>    
+            </div>
+        
+        
+        <p>{{ text | cut:'world' }}</p>
+        <p>{{ number |  add:"99"}}</p>
+    </div>
+    
+    
+    
+    
+    {% endblock %}
